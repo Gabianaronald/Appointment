@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+.booking-container {
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 6px solid #063b52;
+}
+
+.booking-header {
+    background: #3498db;
+    color: white;
+    padding: 25px;
+    text-align: left;
+}
+
+.booking-header h1 {
+    font-size: 45px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.booking-header p {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.booking-content {
+    padding: 25px;
+}
+
+.booking-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    text-align: left;
+    padding: 10px;
+}
+
+tr {
+    border-bottom: 2px solid #acababb4;
+}
+
+td:nth-child(1) {
+    width: 45%;
+}
+
+td:nth-child(2) {
+    width: 18%;
+}
+
+td:nth-child(3) {
+    width: 18%;
+}
+
+td:nth-child(4) {
+    text-align: right;
+}
+
+td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+td p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #ff5100;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+
+#booking-form {
+    display: none;
+}
+
+#booking-summary {
+    display: none;
+}

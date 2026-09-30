@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Online Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="booking-container">
+
+    <div class="booking-header">
+        <h1>Online Booking</h1>
+        <p>Book an appointment with this Clinic</p>
+    </div>
+
+    <div class="booking-content">
+        <h2>Choose an Option</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Office Visit</b>
+                        <p>Returning visit with your
+                        provider to address existing
+                        or new issues</p></td>
+                    <td>45 minutes</td>
+                    <td>$100</td>
+                    <td><button onclick="bookService('Office Visit')">Book Now</button></td>
+                </tr>
+                <tr>
+                    <td><b>Tune-up</b>
+                    <p>Returning visit with your provider to address existing or new issues</p></td>
+                    <td>30 minutes</td>
+                    <td>$50</td>
+                    <td><button onclick="bookService('Tune-up')">Book Now</button></td>
+                </tr>
+                <tr>
+                    <td><b>Assessment</b></td>
+                    <td>60 minutes</td>
+                    <td>$120</td>
+                    <td><button onclick="bookService('Assessment')">Book Now</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="booking-form">
+            <p>Selected Service: <span id="selected-service"></span></p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <br>
+            <button onclick="confirmBooking()">Confirm Booking</button>
+        </div>
+        <div id="booking-summary">
+            <h2>Booking Confirmed! ✅</h2>
+            <p id="summary-service"></p>
+            <p id="summary-name"></p>
+            <p id="summary-date"></p>
+            <p id="summary-time"></p>
+            <button onclick="bookAnother()">Book Another Appointment</button>
+        </div>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
